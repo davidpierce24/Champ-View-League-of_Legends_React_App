@@ -1,0 +1,22 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.App {
+  text-align: center;
+  /* background-color: rgb(0, 20, 82); */
+}
+
+/* .main-background::before {
+  content: '';
+  background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_18.jpg');
+  position: absolute;
+  background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+      z-index: 0;
+} */
