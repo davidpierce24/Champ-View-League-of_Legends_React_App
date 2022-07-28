@@ -22,7 +22,7 @@ const SkinModal = props => {
         <div id='container' onClick={handleOnClose} className='fixed inset-0 bg-neutral-400 bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
             {
             modalImage ? <div className="">
-                <img src={modalImage} alt='skin' className='max-w-6xl rounded-xl' />
+                <img src={modalImage} alt='skin' className='w-full lg:max-w-6xl rounded-xl' />
                 
             </div> : <div className="flex justify-center items-center">
                         <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">

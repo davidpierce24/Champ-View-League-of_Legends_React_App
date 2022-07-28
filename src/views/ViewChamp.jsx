@@ -27,14 +27,15 @@ const ViewChamp = props => {
 
 
     return (
-        <div className='bg-gradient-to-b from-blue-800 to-blue-300 flex justify-center text-white min-h-screen'>
+        <div>
             <Navbar />
+        <div className='bg-gradient-to-b from-blue-800 to-blue-300 flex justify-center text-white min-h-screen'>
             {
-            champData ? <div className="px-20 py-28 w-full">
-                <div className='flex justify-between flex-wrap g-5'>
-                    <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`} alt={champData.name} className='w-full xl:w-1/2 rounded-xl' />
-                    <div className='flex xl:flex-col justify-start w-full xl:w-1/2 '>
-                        <div className='flex flex-col px-10 items-start basis-1/2 justify-center xl:justify-start'>
+            champData ? <div className="px-10 sm:px-20 py-28 w-full">
+                <div className='flex justify-between flex-wrap g-5 '>
+                    <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`} alt={champData.name} className='w-screen xl:w-1/2 rounded-xl' />
+                    <div className='flex flex-col sm:flex-row xl:flex-col justify-start w-full xl:w-1/2 '>
+                        <div className='flex flex-col px-10 sm:items-start basis-1/2 justify-center items-center xl:justify-start'>
                             <p className='text-5xl mb-3'>{champData.name}</p>
                             <p className='text-white opacity-60 mb-2 text-xl'>{champData.title}</p>
                             <p className='text-yellow-500 text-lg'>{champData.tags[0]} {champData.tags[1]} {champData.tags[2]}</p>
@@ -48,8 +49,8 @@ const ViewChamp = props => {
                     </div>
                 </div>
                 <div className='flex justify-center mt-5 gap-5'>
-                    <div className="basis-1/2 bg-black bg-opacity-20 p-5 rounded-xl">
-                        <p className=' text-2xl underline pb-2' >Lore</p>
+                    <div className="basis-1/2 bg-black bg-opacity-20 p-5 rounded-xl hidden sm:block">
+                        <p className=' text-2xl underline pb-2 ' >Lore</p>
                         <p className=' text-lg ' >{champData.lore}</p>
                     </div>
                     <div className='bg-black bg-opacity-20 basis-1/2 rounded-xl w-fit p-5'>
@@ -71,7 +72,7 @@ const ViewChamp = props => {
                                 setModalChampName(id)
                                 setModalChampSkinID(skin.num)
                                 }}>
-                                <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`} alt={skin.name} className='max-w-sm hover:scale-105 duration-75 rounded-lg' />
+                                <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`} alt={skin.name} className='w-xs md:max-w-sm hover:scale-105 duration-75 rounded-lg' />
                                 <p className='text-3xl absolute inset-x-0.5 inset-y-1/3 sm:inset-y-1/2'>{skin.name}</p>
                             </div>
                             
@@ -86,7 +87,7 @@ const ViewChamp = props => {
                     </div>
             }
             {modalOn && <SkinModal modalOn={modalOn} onClose={handleOnClose} champName={modalChampName} skinID={modalChampSkinID} />}
-        </div>
+        </div></div>
     )
 }
 

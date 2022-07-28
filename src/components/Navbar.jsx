@@ -19,8 +19,8 @@ const Navbar = props => {
             <div className="text-2xl">
             {/* <img src="https://1l84rj2eepdd3xktbl163vrw-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/riotwhitep.png" alt="pic" className=" max-w-xs" /> */}
                 <ul className="flex gap-10">
-                    <Link to="/"><li>Home</li></Link>
-                    <Link to="/champ/random"><li>Random Character</li></Link>
+                    <Link to="/" className='hover:opacity-50'><li>Home</li></Link>
+                    <Link to="/champ/random" className='hover:opacity-50'><li>Random Character</li></Link>
                 </ul>
             </div>
         </nav>

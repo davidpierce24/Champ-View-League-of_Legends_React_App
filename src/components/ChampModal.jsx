@@ -28,13 +28,13 @@ const ChampModal = props => {
     return ( 
         <div id='container' onClick={handleOnClose} className='fixed inset-0 bg-neutral-400 bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
             {
-            champData && modalImage ? <div className="bg-black bg-opacity-70 p-2 rounded-lg flex gap-5 max-w-3xl scale-50 scale-x-75 sm:scale-100">
+            champData && modalImage ? <div className="bg-black bg-opacity-70 p-2 rounded-lg flex gap-5 max-w-3xl m-5">
                 <img src={modalImage} alt={champData.name} className='w-1/2 sm:w-fit' />
                 <div className='flex flex-col items-start pr-2'>
                     <p className='text-white pt-5 text-3xl '>{champData.name}</p>
                     <p className='text-white opacity-60 pt-1 text-xl'>{champData.title}</p>
                     <p className='text-yellow-500 pt-1 text-lg'>{champData.tags[0]} {champData.tags[1]} {champData.tags[2]}</p>
-                    <p className='text-white pt-5 text-md'>{champData.allytips}</p>
+                    <p className='text-white pt-5 text-md hidden sm:block'>{champData.allytips}</p>
 
                     <p className='text-white pt-2 text-md'>Attack: {champData.info.attack}</p>
                     <p className='text-white pt-2 text-md'>Defense: {champData.info.defense}</p>

@@ -35,7 +35,7 @@ const RandomChamp = props => {
     return (
         <div style={myStyle}>
             <Navbar />
-            <div className="flex flex-col justify-center items-center text-white p-80 font-serif">
+            <div className="flex flex-col justify-center items-center text-white py-80 px-5 font-serif w-full">
                 <p className="text-3xl md:text-5xl pb-10">So you want to roll the dice?</p>
                 <button className="font-sans mt-5 mb-2 w-fit inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-md leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" onClick={randomRoll}>Roll for Random Champ</button>
                 {
