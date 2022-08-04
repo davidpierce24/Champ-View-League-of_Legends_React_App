@@ -22,7 +22,7 @@ const AllChampionsList = props => {
 
     return (
         <div className='z-0' >
-            <input type="text" placeholder="Search for Champ" className='form-control block m-auto w-1/2 my-5 px-3 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none opacity-80' onChange={e => setSearch(e.target.value)} value={search}/>
+            <input type="text" placeholder="Search for Champ" className='form-control block m-auto w-1/2 my-5 px-3 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none opacity-80' onChange={e => setSearch(e.target.value.toLowerCase())} value={search}/>
             <div className='flex flex-wrap justify-around gap-10 mt-20 mx-20 pb-10'>
             {
                 champList ? Object.values(champList).filter(champ => champ.name.toLowerCase().includes(search)).map((champ, i) => 
