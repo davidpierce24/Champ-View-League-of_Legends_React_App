@@ -23,7 +23,8 @@ const Main = props => {
         <div style={myStyle}>
             <Navbar />
             {/* <p className='text-white text-9xl pt-80 font-serif' >RIOT</p> */}
-            <img src="https://1l84rj2eepdd3xktbl163vrw-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/riotwhitep.png" alt="pic" className="m-auto w-sm sm:w-lg pt-60 " />
+            {/* <img src="https://1l84rj2eepdd3xktbl163vrw-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/riotwhitep.png" alt="pic" className="m-auto w-sm sm:w-lg pt-60 " /> */}
+            <p style={{fontFamily: 'Josefin Sans'}} className="m-auto w-sm sm:w-lg pt-80 pb-10 drop-shadow-md text-white text-6xl sm:text-8xl lg:text-9xl ">Champ View</p>
             <AllChampionsList />
             
         </div>
