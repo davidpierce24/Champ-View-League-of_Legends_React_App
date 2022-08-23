@@ -1,3 +1,6 @@
+![Screenshot 2022-08-16 185232](https://user-images.githubusercontent.com/103011750/186254990-4b7a6487-4aa7-4c8f-b82e-db792b9ef44e.png)
+
+
 # Champ View - a League of Legends app built in React
 
 This is a project I started because I was excited to try out a Riot API and work on my skills with React and Tailwind CSS. So far, it's a front-end app that allows the user to explore different League of Legends champions. The user can see champ stats, skins, and how the champ compares to others. There's also an opportunity to roll for a random champ to play. Right now, it's a fun way to look at champs, but something I'm hoping to expand for greater functionality in the future.
